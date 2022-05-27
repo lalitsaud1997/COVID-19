@@ -3,7 +3,6 @@ from .models import Coronavirus
 from .serializers import CoronavirusModelSerializer
 
 # Create your views here.
-
 class CoronavirusListAPIView(generics.ListAPIView):
     queryset = Coronavirus.objects.all()
     queryset = queryset.extra(select={
